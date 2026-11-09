@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+*.log
+model_metrics_latest.csv
+# Historical committed datasets and models are retained; .gitignore does not remove tracked files.
