@@ -1,8 +1,25 @@
-# Bitcoin Volatility Forecasting — MSc Research Project
+# Bitcoin Volatility Forecasting | Research & Data Science
 
-[![Data split tests](https://github.com/kanizfatemar0xy/Bitcoin_dissertation/actions/workflows/python-tests.yml/badge.svg)](https://github.com/kanizfatemar0xy/Bitcoin_dissertation/actions/workflows/python-tests.yml)
+[![Python quality checks](https://github.com/kanizfatemar0xy/Bitcoin_dissertation/actions/workflows/python-tests.yml/badge.svg)](https://github.com/kanizfatemar0xy/Bitcoin_dissertation/actions/workflows/python-tests.yml)
 
-A research/education repository exploring next-day Bitcoin volatility forecasting using historical market movement, news sentiment and social-media sentiment. Maintained by **Kaniz Fatema Roxy**.
+**Python · pandas · NumPy · scikit-learn · XGBoost · TensorFlow · time-series research**
+
+A research-oriented exploration of next-day Bitcoin volatility using historical market changes, news and social-media sentiment. Developed by **Kaniz Fatema Roxy**.
+
+**[👩‍💻 Developer portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)** · **[Read the training code](src/model_training.py)** · **[Tests](tests/test_split_utils.py)** · **[CI checks](https://github.com/kanizfatemar0xy/Bitcoin_dissertation/actions/workflows/python-tests.yml)**
+
+## Research workflow at a glance
+
+| Stage | Details |
+| --- | --- |
+| Inputs | Historical Bitcoin prices and text-sentiment datasets |
+| Preprocessing | Daily returns, rolling volatility and daily sentiment aggregates |
+| Modelling | Random Forest, Gradient Boosting, XGBoost, SVR, LSTM |
+| Validation | Chronological holdout; scaler fitted on training data only |
+| Reproducibility | Python unit tests, documented requirements and GitHub Actions checks |
+
+> **Evaluation caveat:** Previously committed trained model files and comparison plots predate the corrected leakage controls. They **must be retrained and re-evaluated** before making reliable comparative-performance claims. Existing CI checks validate source and split helpers, **not** full training or benchmark metrics.
+
 
 ## Contents
 - `src/data_prep.py`: process historical prices, news and tweets into a daily feature table
